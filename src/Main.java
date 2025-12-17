@@ -12,10 +12,15 @@ public class Main{
         String nome = sc.nextLine();
 
         //Recebe um numero positivo
-
+        int n;
         System.out.println("Digite um numero positivo: ");
-        int n = sc.nextInt();
+        n = sc.nextInt();
 
+        //valida se o numero é positivo
+        if(n < 0){
+            System.out.println("Numero invalido, encerrando a operação!");
+            return;
+        }
 
         //Exibe o numero de forma decrescente (n ate 0)
         System.out.println("\n Contagem decrescente: ");
